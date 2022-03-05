@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER MEMBER</title>
+    <link rel="stylesheet" href="../static/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <div class="add-company">
+      <div class="row">
+        <div class="container">
+          <div class="add-form">
+            <form action="" method = "POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <h3 class="heading">TESTING</h3>
+
+              <div class="form-group">
+                <label class="form-label">fullname</label>
+                <input
+                  id="fulname-id"
+                  name="fullname"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="tax-id" class="form-label">role</label>
+                <input
+                  id="role-id"
+                  name="role"
+                  type="text"
+                  placeholder="VD: 23881923"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+
+              
+
+              <div class="form-group">
+                <label for="auth-capital" class="form-label"
+                  >phone</label
+                >
+                <input
+                  id="phone-id"
+                  name="phone"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="field" class="form-label">date of birth</label>
+                <input
+                  id="dob-id"
+                  name="dob"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="emp-number" class="form-label"
+                  >gender</label
+                >
+                <input
+                  id="gender-id"
+                  name="gender"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="emp-number" class="form-label"
+                  >address</label
+                >
+                <input
+                  id="address-id"
+                  name="address"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="emp-number" class="form-label"
+                  >username</label
+                >
+                <input
+                  id="username-id"
+                  name="username"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="emp-number" class="form-label"
+                  >password</label
+                >
+                <input
+                  id="password-id"
+                  name="password"
+                  type="text"
+                  class="form-control"
+                />
+                <span class="form-message"></span>
+              </div>
+              <input class="btn btn-dark my-4" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
